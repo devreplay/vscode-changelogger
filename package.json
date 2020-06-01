@@ -1,6 +1,6 @@
 {
 	"name": "changelogger",
-	"displayName": "changelogger",
+	"displayName": "Change Logger",
 	"description": "Logging the changes for reusing by DevReplay",
 	"version": "0.0.1",
 	"author": "Yuki Ueda",
