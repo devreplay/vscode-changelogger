@@ -1,0 +1,83 @@
+{
+	"name": "changelogger",
+	"displayName": "changelogger",
+	"description": "",
+	"version": "0.0.1",
+	"author": "Yuki Ueda",
+	"publisher": "Ikuyadeu",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/devreplay/vscode-changelogger"
+	  },
+	  "bugs": {
+		"url": "https://github.com/devreplay/vscode-changelogger/issues"
+	},
+	"engines": {
+		"vscode": "^1.45.1"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:changelogger.addchange"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"title": "Make patterns from latest change",
+				"category": "changelogger",
+				"command": "changelogger.addchange",
+				"icon": {
+				  "light": "./images/icon.png",
+				  "dark": "./images/icon.png"
+				}
+			}
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "changelogger.addchange",
+					"group": "navigation",
+					"when": "editorLangId == python || editorLangId == java || editorLangId == typescript || editorLangId == javascript"
+				}
+			]
+		},
+		"configuration":{
+			"title": "changelogger",
+			"type": "object",
+			"properties": {
+				"changelogger.exec.save": {
+					"type": "boolean",
+					"default": false,
+					"description": "Execute when a file is saved"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"dependencies": {
+		"devreplay": "^1.4.4",
+		"parse-diff": "^0.7.0",
+		"source-code-tokenizer": "^0.1.2"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^14.0.5",
+		"@types/vscode": "^1.45.1",
+		"@types/oniguruma": "^7.0.1",
+		"glob": "^7.1.6",
+		"mocha": "^6.2.2",
+		"typescript": "^3.9.3",
+		"tslint": "^6.1.2",
+		"vscode-test": "^1.2.2"
+	}
+}
