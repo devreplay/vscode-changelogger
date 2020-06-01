@@ -4,6 +4,7 @@
 	"description": "Logging the changes for reusing by DevReplay",
 	"version": "0.0.1",
 	"author": "Yuki Ueda",
+	"icon": "images/icon.png",
 	"publisher": "Ikuyadeu",
 	"license": "MIT",
 	"repository": {
