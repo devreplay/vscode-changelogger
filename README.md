@@ -1,5 +1,8 @@
 # Change Logger
 
+
+**Note**: This  This extension has been deprecated in favor of the [devreplay]https://marketplace.visualstudio.com/items?itemName=Ikuyadeu.devreplay(). 
+
 Logging the changes from HEAD commit for reusing by [DevReplay](https://devreplay.github.io/)
 
 ## Usage

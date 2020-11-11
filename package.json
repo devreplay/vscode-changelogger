@@ -1,8 +1,8 @@
 {
 	"name": "changelogger",
-	"displayName": "Change Logger",
+	"displayName": "Change Logger (deprecated)",
 	"description": "Logging the changes for reusing by DevReplay",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"author": "Yuki Ueda",
 	"icon": "images/icon.png",
 	"publisher": "Ikuyadeu",
@@ -15,7 +15,7 @@
 		"url": "https://github.com/devreplay/vscode-changelogger/issues"
 	},
 	"engines": {
-		"vscode": "^1.45.1"
+		"vscode": "^1.50.1"
 	},
 	"categories": [
 		"Other"
@@ -70,7 +70,7 @@
 		"source-code-tokenizer": "^0.1.2"
 	},
 	"devDependencies": {
-		"@types/glob": "^7.1.1",
+		"@types/glob": "^7.1.3",
 		"@types/mocha": "^7.0.2",
 		"@types/node": "^14.0.5",
 		"@types/vscode": "^1.45.1",
